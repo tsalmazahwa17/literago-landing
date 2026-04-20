@@ -3,127 +3,164 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>LiteraGo - Pinjam Buku dari Rumah</title>
+  <title>LiteraGo</title>
 
-  <!-- FONT -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-
-  <!-- CSS -->
   <link rel="stylesheet" href="style.css">
-
-  <!-- AOS -->
-  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
+
 <body>
 
-  <!-- HERO -->
-  <header class="hero">
-    <div class="container hero-content">
+<!-- HERO -->
+<section class="hero">
+  <div class="overlay"></div>
 
-      <div class="hero-text" data-aos="fade-right">
-        <h1>Pinjam Buku Perpustakaan Tanpa Keluar Rumah</h1>
-        <p>LiteraGo memungkinkan kamu meminjam buku dari perpustakaan dan diantar langsung ke rumahmu.</p>
+  <div class="container hero-content">
 
-        <form class="email-form">
-          <input type="email" placeholder="Masukkan email kamu..." required>
-          <button type="submit">Coba Sekarang</button>
-        </form>
+    <!-- LEFT -->
+    <div class="hero-left">
+      <h1>Pinjam Buku Tanpa Keluar Rumah</h1>
+
+      <p>
+        LiteraGo memudahkan kamu meminjam buku dari perpustakaan
+        dan diantar langsung ke rumah.
+      </p>
+
+      <div class="hero-badge">
+        • Ongkir Murah • Cepat • Praktis
+      </div>
+    </div>
+
+    <!-- RIGHT (CARD FIX) -->
+    <div class="hero-card">
+      <h3>Dapatkan Akses Awal</h3>
+
+      <input type="text" placeholder="Nama kamu">
+      <input type="email" placeholder="Email kamu">
+
+      <button>Mulai Sekarang</button>
+    </div>
+
+  </div>
+</section>
+<!-- FEATURES -->
+<section class="features">
+  <div class="container">
+    <h2 data-aos="fade-up">Kenapa LiteraGo?</h2>
+
+    <div class="feature-list">
+      <div class="feature">📚 Pinjam dari rumah</div>
+      <div class="feature">🚚 Diantar ke rumah</div>
+      <div class="feature">⏱️ Hemat waktu</div>
+    </div>
+  </div>
+</section>
+
+<!-- BOOK GRID -->
+<section class="books">
+  <div class="container">
+    <h2 data-aos="fade-up">Buku Populer</h2>
+
+    <div class="book-grid">
+      <div class="book-card">
+        <img src="images/buku1.jpg">
+        <p>Di Tanah Lada</p>
       </div>
 
-      <div class="hero-image" data-aos="fade-left">
-        <div class="phone">
-          <div class="screen">
-            <img src="https://covers.openlibrary.org/b/id/10523338-L.jpg" alt="book">
-            <img src="https://covers.openlibrary.org/b/id/9879251-L.jpg" alt="book">
-            <img src="https://covers.openlibrary.org/b/id/8228691-L.jpg" alt="book">
+      <div class="book-card">
+        <img src="images/buku2.jpg">
+        <p>Laut Bercerita</p>
+      </div>
+
+      <div class="book-card">
+        <img src="images/buku3.jpg">
+        <p>Atomic Habits</p>
+      </div>
+
+      <div class="book-card">
+        <img src="images/buku4.jpg">
+        <p>A Brief History of Time</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIAL -->
+<section class="testimonial">
+  <div class="container">
+    <h2 data-aos="fade-up">Apa Kata Mereka?</h2>
+
+    <div class="testimonial-list">
+
+      <div class="testimonial-card" data-aos="fade-up">
+        <p>"Sekarang pinjam buku jadi gampang banget!"</p>
+        <div class="user">
+          <img src="https://i.pravatar.cc/50?img=1">
+          <div>
+            <h4>Aulia</h4>
+            <span>⭐⭐⭐⭐⭐</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card" data-aos="fade-up">
+        <p>"Nggak perlu ke perpustakaan lagi."</p>
+        <div class="user">
+          <img src="https://i.pravatar.cc/50?img=2">
+          <div>
+            <h4>Rizky</h4>
+            <span>⭐⭐⭐⭐☆</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card" data-aos="fade-up">
+        <p>"Pelayanan cepat & praktis."</p>
+        <div class="user">
+          <img src="https://i.pravatar.cc/50?img=3">
+          <div>
+            <h4>Salsa</h4>
+            <span>⭐⭐⭐⭐⭐</span>
           </div>
         </div>
       </div>
 
     </div>
-  </header>
+  </div>
+</section>
+<!-- CTA -->
+<section class="cta-section">
+  <div class="container">
+    <h2>Mulai Sekarang</h2>
 
-  <!-- FEATURES -->
-  <main>
-    <section class="features">
-      <div class="container">
-        <h2 data-aos="fade-up">Kenapa LiteraGo?</h2>
+    <form class="email-form center">
+      <input type="email" placeholder="Email kamu..." required>
+      <button>Daftar</button>
+    </form>
+  </div>
+</section>
 
-        <div class="feature-list">
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container footer-content">
 
-          <article class="feature" data-aos="fade-up" data-aos-delay="100">
-            <h3>📚 Pinjam dari Rumah</h3>
-            <p>Pilih buku dari katalog tanpa datang ke perpustakaan.</p>
-          </article>
-
-          <article class="feature" data-aos="fade-up" data-aos-delay="200">
-            <h3>🚚 Diantar ke Rumah</h3>
-            <p>Buku dikirim langsung ke alamatmu.</p>
-          </article>
-
-          <article class="feature" data-aos="fade-up" data-aos-delay="300">
-            <h3>⏱️ Hemat Waktu</h3>
-            <p>Tidak perlu antre dan lebih praktis.</p>
-          </article>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- BOOK -->
-    <section class="books">
-      <div class="container">
-        <h2 data-aos="fade-up">Buku Populer</h2>
-
-        <div class="book-grid">
-          <img src="https://covers.openlibrary.org/b/id/10523338-L.jpg" alt="">
-          <img src="https://covers.openlibrary.org/b/id/9879251-L.jpg" alt="">
-          <img src="https://covers.openlibrary.org/b/id/8228691-L.jpg" alt="">
-          <img src="https://covers.openlibrary.org/b/id/11153219-L.jpg" alt="">
-        </div>
-      </div>
-    </section>
-
-    <!-- TESTIMONIAL -->
-    <section class="testimonial">
-      <div class="container" data-aos="fade-up">
-        <h2>Testimoni</h2>
-        <div class="testimonial-card">
-          <p>"Praktis banget, sekarang pinjam buku nggak perlu keluar rumah."</p>
-          <span>— Pengguna</span>
-        </div>
-      </div>
-    </section>
-
-    <!-- CTA -->
-    <section class="cta-section">
-      <div class="container" data-aos="zoom-in">
-        <h2>Mulai Sekarang</h2>
-
-        <form class="email-form center">
-          <input type="email" placeholder="Email kamu..." required>
-          <button type="submit">Daftar</button>
-        </form>
-      </div>
-    </section>
-  </main>
-
-  <!-- FOOTER -->
-  <footer>
-    <div class="container footer-content">
-      <p>© 2026 LiteraGo</p>
-      <nav>
-        <a href="#">Terms</a>
-        <a href="#">Privacy</a>
-      </nav>
+    <div class="footer-left">
+      <h3>LiteraGo</h3>
+      <p>Pinjam buku tanpa keluar rumah.</p>
     </div>
-  </footer>
 
-  <!-- SCRIPT -->
-  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-  <script>
-    AOS.init({ duration: 1000, once: true });
-  </script>
+    <div class="footer-links">
+      <a href="#">Home</a>
+      <a href="#">Features</a>
+      <a href="#">Privacy</a>
+    </div>
 
-</body>
-</html>
+    <div class="footer-social">
+      <a href="#">Instagram</a>
+      <a href="#">Twitter</a>
+    </div>
+
+  </div>
+
+  <p class="copyright">© 2026 LiteraGo</p>
+</footer>
